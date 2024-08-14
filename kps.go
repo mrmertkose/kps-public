@@ -10,6 +10,7 @@ const baseUrl = "https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx?WSDL"
 
 func GetService(identityNumber int64, name string, surname string, year int32) (bool, error) {
 
+	// then detailed validation should be done for ID, date of birth and name and surname
 	if identityNumber == 0 || name == "" || surname == "" || year == 0 {
 		return false, errors.New("information cannot be left empty")
 	}
