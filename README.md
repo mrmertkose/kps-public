@@ -1,15 +1,18 @@
-# **Usage**
+### **Usage**
 
 This guide explains how to use the Kps GetService function and what behavior to expect.
 
-## **Parameters**
+###  **Installation**
+`go get github.com/mrmertkose/kps-public`
+
+###  **Parameters**
 
 * identityNumber (int64): The identity number of the individual. Should be a valid integer value.
 * name (string): The first name of the individual. This is a required field.
 * surname (string): The last name of the individual. This is a required field.
 * year (int32): The birth year of the individual. Should be a valid four-digit year.
 
-## **Return Values**
+###  **Return Values**
 * bool: Returns true if the service operation is successful, otherwise false.
 * error: Returns an error if there is a problem with the input parameters or the service operation.
 
